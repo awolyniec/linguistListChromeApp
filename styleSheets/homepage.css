@@ -1,0 +1,254 @@
+/*main div containg home Content View*/
+#homeCV{
+    font-family: roboto-regular;
+}
+
+#topBarHome{
+    background: rgb(240, 240, 240);
+    box-shadow: 0px 0px 5px #888888;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    font-size: 1.4em;
+    height: 30px;
+    /*height: 54px;   for mobile to make it same height as native bar*/
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    display: block;
+}
+#topBarTitle{
+    /*font-family: roboto-black;*/
+    /*font-family: roboto-condesed-light;*/
+    /*font-family: roboto-light;*/
+    /*font-family: roboto-medium;*/
+    /*font-family: roboto-thin;*/
+    /*font-family: roboto-regular;*/
+    font-family: roboto-condesed-regular;
+}
+
+/*Subscription part of home, the part that displays once the Subscription button is clicked*/
+#subscriptionHome{
+    background: rgb(240, 240, 240);
+    display:none;
+    margin-top: 20px;
+    margin-right: 60px;
+    margin-left: 20px;
+    border-right: solid #7c7c7c;
+    border-left: solid #7c7c7c;
+    border-width: 1px;
+}
+#titleSH{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+}
+.titleSH{
+    font-size: 1.6em;
+    margin-bottom: 5px;
+}
+#contentSH{
+    display: flex;
+}
+.contentHelp{
+    padding: 10px;
+    font-size: 1.1em;
+}
+#leftSH{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#rightSH{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonsSH{
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+#contentLingHelpSH{
+    display:none;
+}
+#contentLiteHelpSH{
+    display:none;
+}
+.activeHelp{
+    background-color: #e2e2e2;
+}
+/* END of Subscription part of home*/
+
+
+#logoHome {
+    padding-top: 40px;
+}
+
+#logoHome, #sloganHome{
+    /*width: 40%;*/
+    background: rgb(240, 240, 240);
+    margin-left: 20px;
+    margin-right: 60px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: solid #7c7c7c;
+    border-left: solid #7c7c7c;
+    border-width: 1px;
+    /*margin: 0 auto;*/
+}
+#sloganHome{
+    font-size: 1.3em;
+}
+/*currenty the div welcomeHome is commented out*/
+#welcomeHome{
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+#welcomeHome, #infoHome{
+    margin-left: 20px;
+    margin-right: 60px;
+}
+/*the Basic info text*/
+#infoHome{
+    margin-top: 10px;
+    font-size: 1.1em;
+    background: rgb(240, 240, 240);
+    padding: 10px;
+    border-right: solid #7c7c7c;
+    border-left: solid #7c7c7c;
+    border-width: 1px;
+}
+#infoHome h1{
+    font-size: 1.2em;
+}
+
+/*buttons: donate, subs,*/
+#buttonsHome{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 60px;
+    padding-left: 40px;
+    display: flex;
+    background: rgb(240, 240, 240);
+    border-right: solid #7c7c7c;
+    border-left: solid #7c7c7c;
+    border-width: 1px;
+}
+#buttonsHome div {
+    flex: 1;
+    font-size: 1.1em;
+}
+
+/*ling logo colors*/
+/*"red" : 800000*/
+/*blue 0000ff*/
+/*yellow ffcc00*/
+
+.yellowHome{
+    float:left;
+    width: 20px;
+    height: 20px;
+    background-color: #ffcc00;
+    border-right: solid black;
+    border-width: 3px;
+}
+.brownHome{
+    float:left;
+    width: 20px;
+    height: 20px;
+    background-color: #800000;
+    border-right: solid black;
+    border-width: 3px;
+}
+.blueHome{
+    /*display:inline-block;*/
+    float:left;
+    width: 20px;
+    height: 20px;
+    background-color: #0000ff;
+    border-right: solid black;
+    border-width: 3px;
+}
+/* the text in buttons*/
+.textHome {
+    display:inline-block;
+    /*margin-top: 5px;*/
+    margin-left: 5px;}
+
+.borderYellowHome{  width: 95px;  height: 20px;  border: solid black;  border-width: 1px;  }
+.borderBrownHome{  width: 135px;  height: 20px;  border: solid black;  border-width: 1px;  }
+.borderBlueHome{  width: 105px;  height: 20px;  border: solid black;  border-width: 1px;  }
+.borderGeneralHome{  width: 115px;  height: 20px;  border: solid black;  border-width: 1px;  }
+
+.borderBlueHome:hover, .borderYellowHome:hover, .borderBrownHome:hover, .borderGeneralHome:hover{
+    background-color: #e2e2e2;
+}
+
+
+/*social buttons home page right side*/
+#socialButtons{
+    position: fixed;
+    top: 40px;
+    right: 0px;
+    width: 50px;
+    box-shadow: 0px 0px 5px #888888;
+    background: rgb(240, 240, 240);
+}
+.socialButtons{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+
+}
+/*face blue #3b5998*/
+/*twitter blue 4099FF */
+/*Gplus red #d34836 */
+/*youtube red #c4302b */
+/*blog blue  #21759b */
+/*light collor settings, brightness to full, saturation to 40*/
+#socialFace:hover{
+    background-image: url('../assets/icons/facebook7bluelight.png');
+}
+#socialFace{
+    background-image: url('../assets/icons/facebook7blue.png');
+}
+#socialTwitter:hover{
+    background-image: url('../assets/icons/twitter4bluelight.png');
+}
+#socialTwitter{
+    background-image: url('../assets/icons/twitter4blue.png');
+}
+#socialGplus:hover{
+    background-image: url('../assets/icons/google4redlight.png');
+}
+#socialGplus{
+    background-image: url('../assets/icons/google4red.png');
+}
+#socialYoutube:hover{
+    background-image: url('../assets/icons/youtubeRedLight.png');
+}
+#socialYoutube{
+    background-image: url('../assets/icons/youtubeRed.png');
+}
+#socialBlog:hover{
+    background-image: url('../assets/icons/blog2blueLight.png');
+}
+#socialBlog{
+    background-image: url('../assets/icons/blog2blue.png');
+}
+
+
+/*hiding the old menu with the tabs*/
+#menu{
+    display:none;
+}

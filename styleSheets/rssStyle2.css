@@ -1,0 +1,238 @@
+html, body {
+    overflow-y: auto;
+}
+
+/*only on mobile*/
+#toolbarnav{
+    display:none;
+}
+
+#category_title{
+    /*border-bottom:1px #000 solid;*/
+    background: #d3d3d3;
+    box-shadow: 0px 0px 5px #888888;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    font-size: 1.8em;
+    /*font-family: roboto-black;*/
+    /*font-family: roboto-condesed-light;*/
+    /*font-family: roboto-light;*/
+    /*font-family: roboto-medium;*/
+    /*font-family: roboto-thin;*/
+    font-family: roboto-regular;
+    /*font-family: roboto-condesed-regular;*/
+    height: 30px;
+    position: fixed;
+    top:0px;
+    width: 100%;
+    z-index: 1;
+}
+
+#noFeeds{
+    /*if there are no feeds of certain category or no internet, the noFeeds div gets created*/
+    margin-top: 50px;
+}
+
+/* #btm_div{
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background: #d3d3d3;
+  height:10px;
+  width:100%;
+} */
+
+#social_div {
+    margin-top:3px;
+    background: #d3d3d3;
+    height:20px;
+}
+#social_div1 {
+    float:right;
+    height:20px;
+    width:20px;
+    margin-right:10px;
+    background-image: url('../assets/icons/facebook7.png');
+    background-size: 20px 20px;
+}
+#social_div1:hover {
+    background-image: url('../assets/icons/facebook7b.png');
+    background-size: 20px 20px;
+}
+#social_div2 {
+    float:right;
+    height:20px;
+    width:20px;
+    margin-right:10px;
+    background-image: url('../assets/icons/mail2.png');
+    background-size: 20px 20px;
+}
+#social_div2:hover {
+    background-image: url('../assets/icons/mail2b.png');
+    background-size: 20px 20px;
+}
+#social_div3 {
+    float:right;
+    height:20px;
+    width:20px;
+    margin-right:10px;
+    background-image: url('../assets/icons/star6.png');
+    background-size: 20px 20px;
+}
+#social_div3:hover {
+    background-image: url('../assets/icons/star6b.png');
+    background-size: 20px 20px;
+}
+
+
+/*not needed since sub menuing, moved to navi css*/
+/*#navmenu{*/
+    /*background:#d3d3d3;*/
+    /*position:fixed;*/
+    /*left:0px;*/
+    /*width:100px;*/
+    /*display: block;*/
+    /*height: 100%;*/
+    /*/!*new navi bar*!/*/
+    /*display:none;*/
+/*}*/
+
+.buttonActive{
+    font-weight: bold;
+}
+
+#pagebody{
+}
+
+/*not needed since sub menuing, moved to navi css*/
+/*#ulNavi {*/
+    /*list-style-type: none;*/
+    /*margin-left: 5px;*/
+    /*margin-right: 3px;*/
+    /*height: 100%;*/
+    /*padding: 0;*/
+    /*display: block;*/
+    /*overflow-y: auto;*/
+/*}*/
+
+/*not needed since sub menuing, moved to navi css*/
+/*#ulNavi a { position: relative; display: block; border-bottom: 1px solid #303c4a; padding: 7px 5px;  color: #000;  font-size: 1.1em; text-decoration: none; }*/
+/*#ulNavi a:hover { text-decoration: none; font-weight: bold;}*/
+/*#ulNavi a:hover::after { border-color: #cad0e6; }*/
+/*button {*/
+    /*width: 90px;*/
+    /*margin-bottom: 5px;*/
+/*}*/
+/*body{*/
+    /*background:#ffffff;*/
+    /*margin:0;padding:0}*/
+
+#content {
+
+}
+
+
+/* the title of the feed in the li*/
+.title{
+    font-size: 12px;
+    padding:10px;
+    /*font-weight: bold;*/
+    /*font-family: roboto-bold !important;*/
+    /*font-family: roboto-black !important;;*/
+    /*font-family: roboto-condesed-light v;*/
+    /*font-family: roboto-light !important;;*/
+    /*font-family: roboto-medium !important;;*/
+    /*font-family: roboto-thin !important;;*/
+    font-family: roboto-regular !important;;
+    /*font-family: roboto-condesed-regular !important;;*/
+    display: inline-block;
+    margin-right:25px;
+    width: 90%;
+}
+
+/*arrow right of the issue title */
+.arrow {
+    border:0;
+    border: none;
+    display: inline-block;
+    position: absolute;
+    margin-top:9px;
+    right: 20px;
+    width:18px;
+    height:18px;
+    display:none;
+
+}
+/* so that the arrow does not disappear when u hover over the issue title */
+.hover_img{
+    display:inline-block;
+}
+
+.click_img{
+    width:32px;
+    height:32px;
+}
+
+#rss_content_top:hover{
+}
+/*background of arrow div*/
+.top_content{
+    background: #d3d3d3;
+}
+
+/*the content that apears once u click on the issue title*/
+.rss_content {
+    display: none;
+    padding:10px;
+}
+/*so that the text is selectable*/
+.post_results {
+    -webkit-user-select: text;.
+}
+#ul_feeds{
+    margin-top: 40px;
+
+}
+.post_results ul {
+    list-style:none;
+    text-align:left;
+    padding:0;
+    margin: 0;
+}
+
+.post_results ul li {
+    margin-left: 10px;
+    margin-right: 15px;
+    border:1px #000 solid;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: #d3d3d3;
+    margin-bottom: 10px;
+}
+
+.post_results ul li:hover{
+    background: #fff;
+}
+
+.active{
+    background: #d3d3d3;
+}
+.active2{
+    background: #fff;
+}
+
+.post_results ul li a{
+    font-size: 13px;
+}
+.post_results ul li a:hover{
+}
+.post_results ul li p {
+    font-family: roboto-regular;
+    font-size: 1.2em;
+    margin: 0;
+    /*display: block;*/
+}
+/* rss Author Date Link, so they are alignet one under another*/
+.rssADL{
+    display: block;
+}

@@ -1,0 +1,134 @@
+  #geoLingCV {
+    overflow:hidden;
+  }
+  
+  .geoLingView {
+    position:absolute;
+    width:100%;
+    height:100%;
+  }
+  
+  .geoLingView webview {
+    width:100%;
+    height:100%;
+  }
+  
+  #geoLingMenuContainer {
+    padding-left:10px;
+    padding-right:10px;
+    height:15px;
+    width:100%;
+    display:inline-block;
+    visibility:hidden;
+  }
+
+  #geoLingMenu {
+    float:left;
+    height:100%;
+    width:30px;
+  }
+  
+  #geoLingMenu p {
+    position:relative;
+    text-align: left;
+    top:25%;
+  }
+  
+  #geoLingMenuButton {
+    position:relative;
+    display:inline;
+    float:right;
+    height:100%;
+    width:100%;
+  }
+  
+  #geoLingTabContainer {
+    float:left;
+    width:70%;
+    height:100%;
+    white-space:nowrap;
+    overflow-x:auto;
+    overflow-y:hidden;
+  }
+    
+  #geoLingTabContainer::-webkit-scrollbar {
+    display:none;
+  }
+  
+  .geoLingTab {
+    background-color:#EEEEEE;
+    width:80px;
+    height:25px;
+    /*float:left;*/
+    display:inline-block;
+    overflow:hidden;
+    text-align:center;
+  }
+    
+  .geoLingTab:active {
+    background-color:#CCEBFF; 
+  }
+    
+  .geoLingTab:hover {
+    background-color:#DDDDDD;
+  }
+    
+  .geoLingTabBackground {
+    display:inline-block;
+    width:60px;
+    height:25px;
+  }
+  
+  .geoLingTabButton {
+    position:relative;
+    display:inline-block;
+    float:right;
+    width:20px;
+    height:15px;
+  }
+
+    /*The marker for more tabs on the left */
+  #overflowExtL {
+    display:none;
+    background-color:#EEEEEE;
+    width:15px;
+    height:100%;
+    text-align:center;
+    float:left;
+  }
+
+  #overflowExtL p {
+    position:relative;
+    top:25%;
+  }
+
+  #overflowExtL:hover {
+    background-color:#666666;
+  }
+
+  #overflowExtL:hover p {
+    color:yellow;
+  }
+
+  /*The marker for more tabs on the right */
+  #overflowExtR {
+    display:none;
+    float:left;
+    background-color:#EEEEEE;
+    width:15px;
+    height:100%;
+    text-align:center;
+  }
+
+  #overflowExtR p {
+    position:relative;
+    top:25%;
+  }
+
+  #overflowExtR:hover {
+    background-color:#666666;
+  }
+
+  #overflowExtR:hover p {
+    color:yellow;
+  }

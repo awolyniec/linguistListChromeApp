@@ -1,0 +1,170 @@
+
+#category_title{
+    background: rgb(240, 240, 240);
+    box-shadow: 0px 0px 5px #888888;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    font-size: 1.8em;
+    font-family: roboto-regular;
+    height: 30px;
+    position: fixed;
+    top:0px;
+    width: 100%;
+    z-index: 1;
+}
+
+#noFeeds{
+    /*if there are no feeds of certain category or no internet, the noFeeds div gets created*/
+    margin-top: 50px;
+}
+
+/* #btm_div{
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background: #d3d3d3;
+  height:10px;
+  width:100%;
+} */
+
+
+/* the title of the feed in the li*/
+.title{
+    font-size: 12px;
+    padding:10px;
+    font-family: roboto-regular !important;;
+    display: inline-block;
+    margin-right:25px;
+    /*color: #3156ab;*/
+    /*color: #19305f;*/
+    color: #0c1327;
+    width: 90%;
+}
+
+/*arrow right of the issue title */
+.arrow {
+    border:0;
+    border: none;
+    display: inline-block;
+    position: absolute;
+    margin-top:9px;
+    right: 20px;
+    width:18px;
+    height:18px;
+    display:none;
+
+}
+/* so that the arrow does not disappear when u hover over the issue title */
+.hover_img{
+    display:inline-block;
+}
+
+/*no idea what this is*/
+.click_img{
+    width:32px;
+    height:32px;
+}
+
+/*background of arrow div*/
+.top_content{
+    /*background: #d3d3d3;*/
+    /*background: #fff;*/
+    background: rgb(240, 240, 240);
+}
+
+/*the content that apears once u click on the issue title*/
+.rss_content {
+    display: none;
+    padding:10px;
+}
+/*so that the text is selectable*/
+.post_results {
+    -webkit-user-select: text;.
+}
+#ul_feeds{
+    margin-top: 40px;
+}
+.post_results ul {
+    list-style:none;
+    text-align:left;
+    padding:0;
+    margin: 0;
+}
+
+.post_results ul li {
+    margin-left: 10px;
+    margin-right: 15px;
+    border-top:1px #000 solid;
+    border-bottom:1px #000 solid;
+    background: rgb(240, 240, 240);
+    color: #0c1327;
+    margin-bottom: 10px;
+}
+
+.post_results ul li:hover{
+    background: #fff;
+}
+/*issue title when clicked*/
+.active{
+    background: rgb(240, 240, 240);
+}
+.active2{
+    background: #fff;
+}
+.post_results ul li a{
+    font-size: 13px;
+}
+.post_results ul li a:hover{
+}
+.post_results ul li p {
+    font-family: roboto-regular;
+    font-size: 1.2em;
+    margin: 0;
+    /*display: block;*/
+}
+/* rss Author Date Link, so they are alignet one under another*/
+.rssADL{
+    display: block;
+}
+
+#social_div {
+    margin-top:3px;
+    background: rgb(240, 240, 240);
+    height:20px;
+}
+#social_div1 {
+    float:right;
+    height:20px;
+    width:20px;
+    margin-right:10px;
+    background-image: url('../assets/icons/facebook7.png');
+    background-size: 20px 20px;
+}
+#social_div1:hover {
+    background-image: url('../assets/icons/facebook7b.png');
+    background-size: 20px 20px;
+}
+#social_div2 {
+    float:right;
+    height:20px;
+    width:20px;
+    margin-right:10px;
+    background-image: url('../assets/icons/mail2.png');
+    background-size: 20px 20px;
+}
+#social_div2:hover {
+    background-image: url('../assets/icons/mail2b.png');
+    background-size: 20px 20px;
+}
+#social_div3 {
+    float:right;
+    height:20px;
+    width:20px;
+    margin-right:10px;
+    background-image: url('../assets/icons/star6.png');
+    background-size: 20px 20px;
+}
+#social_div3:hover {
+    background-image: url('../assets/icons/star6b.png');
+    background-size: 20px 20px;
+}

@@ -1,0 +1,138 @@
+.jPanelMenu-panel{
+    /*border-left: solid #e2e2e2;*/
+    /*border-width: 3px;*/
+
+    /*-webkit-box-shadow: inset 48px -14px 22px -49px rgba(0,0,0,0.6);*/
+    /*-moz-box-shadow: inset 48px -14px 22px -49px rgba(0,0,0,0.6);*/
+    /*box-shadow: inset 48px -14px 22px -49px rgba(0,0,0,0.6);*/
+
+    -webkit-box-shadow: -9px -2px 17px -6px rgba(87,87,87,1);
+    -moz-box-shadow: -9px -2px 17px -6px rgba(87,87,87,1);
+    box-shadow: -9px -2px 17px -6px rgba(87,87,87,1);
+}
+
+/*#divShadow{*/
+    /*z-index: 3;*/
+    /*float:right;*/
+    /*height: 99%;*/
+    /*width: 15px;*/
+    /*background-color: #fff;*/
+    /*/!*border: solid;*!/*/
+    /*/!*border-width: 1px;*!/*/
+    /*-webkit-box-shadow: inset 48px -14px 22px -49px rgba(0,0,0,0.6);*/
+    /*-moz-box-shadow: inset 48px -14px 22px -49px rgba(0,0,0,0.6);*/
+    /*box-shadow: inset 48px -14px 22px -49px rgba(0,0,0,0.6);*/
+/*}*/
+
+#jPanelMenu-menu{
+    list-style-type: none;
+    /*background-color: #e2e2e2;*/
+    background-color: #fff;
+    margin: 0;
+    padding: 0px;
+/* changed the original plugin at line 172 from overflow scroll to overflow auto*/
+}
+#jPanelMenu-menu li{
+    /*margin-right: 5px; /!* the margin for shadow*!/*/
+    border-bottom: solid #e2e2e2;
+    border-width: 1px;
+    border-top: solid #fefefe;
+    border-width: 1px;
+    /*border-bottom-color: black;*/
+    /*background-color: #e2e2e2;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /*margin: 0;*/
+    /*padding: 10px;*/
+    /*background: rgba(226,226,226,1);*/
+    /*background: -moz-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 74%, rgba(219,219,219,1) 75%, rgba(254,254,254,1) 100%);*/
+    /*background: -webkit-gradient(left top, right top, color-stop(0%, rgba(226,226,226,1)), color-stop(74%, rgba(209,209,209,1)), color-stop(75%, rgba(219,219,219,1)), color-stop(100%, rgba(254,254,254,1)));*/
+    /*background: -webkit-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 74%, rgba(219,219,219,1) 75%, rgba(254,254,254,1) 100%);*/
+    /*background: -o-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 74%, rgba(219,219,219,1) 75%, rgba(254,254,254,1) 100%);*/
+    /*background: -ms-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 74%, rgba(219,219,219,1) 75%, rgba(254,254,254,1) 100%);*/
+    /*background: linear-gradient(to right, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 74%, rgba(219,219,219,1) 75%, rgba(254,254,254,1) 100%);*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 );*/
+}
+
+/* a class that shows one of the buttos in main navi as the Active*/
+.btnActive{
+    background: rgba(226,226,226,1);
+    color: #3369E8;
+}
+
+#jPanelMenu-menu li p {
+    font-size: 1.5em;
+    text-decoration: none;
+    /*color: black;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    /*font-family: roboto-black;*/
+    /*font-family: roboto-condesed-light;*/
+    font-family: roboto-light;
+    /*font-family: roboto-medium;*/
+    /*font-family: roboto-thin;*/
+
+}
+
+/*read sub menu*/
+#ulNaviRead{
+    font-size: 1.2em;
+    display:none;
+    font-family: roboto-light;
+    list-style:none;
+    text-align:left;
+    padding-left:10px;
+    margin: 0;
+
+}
+#ulNaviRead a {
+    color: black;
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 1.1em;
+}
+
+.naviArrow{
+    display:inline-block;
+    width: 30px;
+    height:29px;
+    background-image: url("../assets/icons/chevron2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 13px 13px;
+    float: right;
+    right:15px;
+    bottom: 5px;
+    /*border-left: solid black;*/
+    /*border-width: 1px;*/
+}
+#homeIcon{
+    background-image: url("../assets/icons/house204.png");
+}
+#geoIcon{
+    background-image: url("../assets/icons/pin12.png");
+}
+#readIcon{
+    background-image: url("../assets/icons/news.png");
+}
+#settingsIcon{
+    background-image: url("../assets/icons/gear40.png");
+}
+#askIcon{
+    background-image: url("../assets/icons/speech%20balloon2.png");
+}
+.homeIcon{
+    display:inline-block;
+    width: 30px;
+    height:30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 17px 17px;
+    float: left;
+    left:0px;
+    bottom: 5px;
+    margin-right: 10px;
+
+}
+

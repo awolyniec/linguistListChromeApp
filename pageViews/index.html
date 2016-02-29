@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>LINGUIST</title>
+    <link rel="stylesheet" href="../styleSheets/index.css"/>
+    <link rel="stylesheet" href="../styleSheets/mainMenu.css"/>
+    <link rel="stylesheet" href="../styleSheets/homepage.css"/>
+    <link rel="stylesheet" href="../styleSheets/geoLing.css"/>
+    <!--<link rel="stylesheet" href="../styleSheets/rssStyle2.css">-->
+    <link rel="stylesheet" href="../styleSheets/rssStyle3.css">
+    <link rel="stylesheet" href="../styleSheets/fonts.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
+<div id="freezer"></div>
+
+<div class="popupMenu" id="geolocationPopupMenu">
+    <h2>
+        Location Information Requested
+    </h2>
+
+    <p>
+        The LINGUIST List app wants to know your location in order to better
+        provide you with relevant information, such as:
+    </p>
+    <ul>
+        <li>
+            Jobs, conferences, and other events in your area
+        </li>
+        <li>
+            Your location visible when you use the GeoLing map
+        </li>
+    </ul>
+    <p>
+        Enable location services? You can change this
+        any time in the settings menu.
+
+    <form>
+        <select name="geolocationPermission">
+            <option value="" disabled selected>Select...</option>
+            <option value="allow longTerm">Enable and remember</option>
+            <option value="deny longTerm">Disable and remember</option>
+            <option value="allow temporary">Enable once</option>
+            <option value="deny temporary">Disable once</option>
+        </select>
+    </form>
+    </p>
+</div>
+    <div id="helpPopupMenu" class="popupMenu">
+        <button id="helpX" class="contentMenuX">X</button>
+        <br>
+
+        <h2>Help</h2>
+
+        <h3>Table of Contents</h3>
+        <ol>
+            <li>
+                Frequently Asked Questions
+            </li>
+            <li>
+                Getting Started
+            </li>
+            <li>
+                Navigation
+            </li>
+            <li>
+                GeoLing in the LINGUIST List App
+            </li>
+            <li>
+                Subscribing/unsubscribing to LINGUIST and LINGLITE
+            </li>
+            <li>
+                Reading the LINGUIST List RSS Feed
+            </li>
+            <li>
+                Supporting the LINGUIST List
+            </li>
+            <li>
+                Visiting the LINGUIST List website
+            </li>
+            <li>
+                Settings
+            </li>
+        </ol>
+    </div>
+    <div id="settingsPopupMenu" class="popupMenu">
+        <button id="settingsX" class="contentMenuX">X</button>
+        <br>
+        <h2>Settings</h2>
+        <div id="geolocationSetting" class="settingsDiv">
+            <p>Location services: </p>
+
+            <div class="floatRightInline">
+                <form>
+                    <p>On</p>
+                    <input type="radio" name="geolocationPermission" value="allow longTerm">
+                    <p>Off</p>
+                    <input type="radio" name="geolocationPermission" value="deny longTerm">
+                </form>
+                <!--<button>?</button>-->
+                <br>
+                <p><i>***Note: Changes to geolocation settings go into effect once the app is closed
+                and then reloaded.</i>
+                </p>
+                <br>
+                <br>
+            </div>
+        </div>
+        <button id="settingsSubmit">Submit</button>
+        <button id="settingsCancel">Cancel</button>
+    </div>
+
+<div id="header">
+  <p id="issueTitle"></p>
+  <div id="leftHeader">
+      <div class="menu-trigger"></div>
+  </div>
+  <div id="geoLingMenuContainer">
+    <div id="overflowExtL">
+      <<
+    </div>
+    <div id="geoLingMenu">
+      <button id="geoLingMenuButton">+</button>
+    </div>
+    <div id="geoLingTabContainer">
+      </div>
+    <div id="overflowExtR">
+      >>
+    </div>
+  </div>
+  <div id="rightHeader">
+    <!--<div class="settingsDots">. . .</div>
+    <button id="help">?</button>
+    <button id="settings">(*)</button>
+    <button id="donate">Support</button>-->
+    <div id="settingsMenuTrigger"></div>
+    <div id="settingsMenuDropDown">
+      <ul>
+        <li>Help</li>
+        <li>Settings</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<header class="main">
+    <ul id="menu1" style="display: none;">
+        <!--<div id="divShadow"></div>-->
+        <li id="btn_home">
+            <div id="homeIcon" class="homeIcon"></div>
+            <p>Home</p></li>
+        <li id="btn_geoling">
+            <div id="geoIcon" class="homeIcon"></div>
+            <p>GeoLing</p>
+
+            <div id="geoDropDown" class="naviArrow"></div>
+        </li>
+        <li id="liRead">
+            <div id="readIcon" class="homeIcon"></div>
+            <p id="btn_read">Read</p>
+
+            <div id="readDropDown" class="naviArrow"></div>
+        </li>
+        <ul id="ulNaviRead">
+            <li><a href="#" id="btn_latest" class="navlink">Latest</a></li>
+            <li><a href="#" id="btn_all" class="navlink">All</a></li>
+            <li><a href="#" id="btn_books" class="navlink">Books</a></li>
+            <li><a href="#" id="btn_calls" class="navlink">Calls</a></li>
+            <li><a href="#" id="btn_conf" class="navlink">Conferences</a></li>
+            <li><a href="#" id="btn_disc" class="navlink">Discussions</a></li>
+            <li><a href="#" id="btn_dise" class="navlink">Dissertations</a></li>
+            <li><a href="#" id="btn_fyi" class="navlink">FYI</a></li>
+            <li><a href="#" id="btn_intern" class="navlink">Internships</a></li>
+            <li><a href="#" id="btn_jobs" class="navlink">Jobs</a></li>
+            <li><a href="#" id="btn_media" class="navlink">Media</a></li>
+            <li><a href="#" id="btn_queries" class="navlink">Queries</a></li>
+            <li><a href="#" id="btn_bookRev" class="navlink">Reviews</a></li>
+            <li><a href="#" id="btn_software" class="navlink">Software</a></li>
+            <li><a href="#" id="btn_summaries" class="navlink">Summaries</a></li>
+            <li><a href="#" id="btn_support" class="navlink">Support</a></li>
+            <li><a href="#" id="btn_journal" class="navlink">Journal TOC</a></li>
+            <li><a href="#" id="btn_favorites" class="navlink">Favorites</a></li>
+        </ul>
+        <li>
+            <div id="askIcon" class="homeIcon"></div>
+            <p>Ask a Linguist</p></li>
+        <!--<li id="btn_subscription"><p>Subscription</p></li>-->
+        <li>
+            <div id="settingsIcon" class="homeIcon"></div>
+            <p>Settings</p></li>
+
+    </ul>
+</header>
+
+<div id="content">
+    <!--home cv -->
+    <div class="contentView" id="homeCV">
+        <!--<iframe src="sandboxed.html" width="100%" height="100%" frameBorder="0"></iframe>-->
+        <div id="topBarHome"><p id="topBarTitle">Welcome to the Linguist List App</p></div>
+        <div id="logoHome"><a href="http://linguistlist.org/" target="_blank"><img src="../lllogo-small.png"></a></div>
+        <div id="sloganHome"><p>International Linguistics Community Online</p></div>
+        <!--<div id="welcomeHome"><p>Welcome to the Linguist List App</p></div>-->
+        <div id="infoHome">
+            <h1>Basic info</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor auctor lacinia. Maecenas
+                interdum leo vitae magna convallis faucibus. Morbi id faucibus massa. Vestibulum faucibus consequat
+                felis. Quisque eget lectus augue. Fusce eleifend auctor cursus. Donec eleifend turpis at tellus
+                fringilla maximus. Curabitur auctor convallis nisl non faucibus. Integer ac pellentesque velit, non
+                tincidunt purus. Curabitur posuere libero ac venenatis vulputate. Nullam cursus odio nibh, eu tristique
+                quam gravida a. Vivamus eu odio posuere, varius nisi vitae, venenatis lectus. Praesent non neque id
+                dolor tristique ornare.
+
+            </p>
+        </div>
+        <div id="socialButtons">
+            <div class="socialButtons" id="socialFace"></div>
+            <div class="socialButtons" id="socialTwitter"></div>
+            <div class="socialButtons" id="socialGplus"> </div>
+            <div class="socialButtons" id="socialYoutube"></div>
+            <div class="socialButtons" id="socialBlog"></div>
+        </div>
+        <div id="buttonsHome">
+            <div class="buttonsHome">
+                <div id="btn_donateHome" class="borderYellowHome">
+                    <div class="yellowHome"></div>
+                    <div class="textHome"><p>Donate</p></div>
+                </div>
+            </div>
+            <div class="buttonsHome">
+                <div id="btn_subscriptionHome" class="borderBrownHome">
+                    <div class="brownHome"></div>
+                    <div class="textHome"><p>Subscription</p></div>
+                </div>
+            </div>
+            <div class="buttonsHome">
+                <div class="borderBlueHome">
+                    <div class="blueHome"></div>
+                    <div class="textHome"><p>Settings</p></div>
+                </div>
+            </div>
+        </div>
+
+        <!--the subscription div activated on click, subscriptionHome SH -->
+        <div id="subscriptionHome">
+            <div id="titleSH"><p>LINGUIST List is a free mailing list, which comes in two versions</p></div>
+            <div id="contentSH">
+                <div id="leftSH">
+                    <div>
+                        <div class="titleSH">LINGUIST</div>
+                        <div class="buttonsSH">
+                            <div id="linguistSubscribe" class="subscribtionButtons borderGeneralHome">
+                                <div class="yellowHome"></div>
+                                <div class="textHome"><p>Subscribe</p></div>
+                            </div>
+                        </div>
+                        <div class="buttonsSH">
+                            <div id="linguistUnSubscribe" class="subscribtionButtons borderGeneralHome">
+                                <div class="blueHome"></div>
+                                <div class="textHome"><p>Unsubscribe</p></div>
+                            </div>
+                        </div>
+                        <div class="buttonsSH">
+                            <div id="linguistHelp" class="subscribtionButtons borderGeneralHome">
+                                <div class="brownHome"></div>
+                                <div class="textHome"><p>Help</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="rightSH">
+                    <div>
+                        <div class="titleSH">LINGLITE</div>
+                        <div class="buttonsSH">
+                            <div id="lingliteSubscribe" class="subscribtionButtons borderGeneralHome">
+                                <div class="yellowHome"></div>
+                                <div class="textHome"><p>Subscribe</p></div>
+                            </div>
+                        </div>
+                        <div class="buttonsSH">
+                            <div id="lingliteUnSubsribe" class="subscribtionButtons borderGeneralHome">
+                                <div class="blueHome"></div>
+                                <div class="textHome"><p>Unsubscribe</p></div>
+                            </div>
+                        </div>
+                        <div class="buttonsSH">
+                            <div id="lingliteHelp" class="subscribtionButtons borderGeneralHome">
+                                <div class="brownHome"></div>
+                                <div class="textHome"><p>Help</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="contentLingHelpSH" class="contentHelp"></div>
+            <div id="contentLiteHelpSH" class="contentHelp"></div>
+        </div>
+
+    </div>
+    <!--end of home-->
+
+    <div class="contentView" id="geoLingCV">
+    </div>
+    <div class="contentView" id="subscribeCV">
+    </div>
+    <div class="contentView" id="RSSCV">
+        <!--<iframe src="rss.html" id="rssIframe" width="100%" height="100%" frameBorder="0"></iframe>-->
+        <div id="rssContent" class="post_results">
+            <div id="category_title">Category feed title</div>
+            <div id="noFeeds"></div>
+            <ul id="ul_feeds"></ul>
+        </div>
+    </div>
+</div>
+
+<script src='../js/geoLingMenuContainer.js' language="JavaScript"></script>
+<script src="../js/viewControl.js" language="JavaScript"></script>
+<!--<script src="../js/unitTests.js" language="JavaScript"></script>-->
+<script src="../js/storage.js"></script>
+<script src="../js/storedSettings.js"></script>
+<script src="../js/jQuery/jQuery_dev.js" language="JavaScript"></script>
+<script src="../js/asyncManagement.js" language="JavaScript"></script>
+<script src="../js/jQuery/jquery.jpanelmenu.js" language="JavaScript"></script>
+<script src="../js/rss2.js" language="JavaScript"></script>
+<script src="../js/settingsHelpMenu.js"></script>
+<script src="../js/loadEvents.js" language="JavaScript"></script>
+</body>
+</html>

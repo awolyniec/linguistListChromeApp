@@ -1,0 +1,18 @@
+{
+	"app": {
+		"background": {
+			"scripts": [ "background.js" ]
+		}
+	},
+	"manifest_version": 2,
+	"name": "LINGUIST",
+	"version": "1.0.0",
+	"icons": { "128": "lllogo-small.png" },
+  	"default_locale": "hr",
+  "sandbox": {
+	"pages": ["pageViews/sandboxed.html"]
+  },
+	"permissions": [ "clipboardRead", "clipboardWrite", "browser", "geolocation", 
+	"location", "audio", "fileSystem", "nativeMessaging", "webview", "storage", "https://www.linguistlist.org/"]
+	
+}

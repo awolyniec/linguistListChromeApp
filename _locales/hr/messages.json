@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "Hello World",
+    "description": "Application name."
+  },
+
+  "test": {"message": "hrv test"},
+  "contentHelpLite" :{"message": "LINGLITE najviše odgovara ljudima koji čitaju LINGUIST na internetu. It is a reduced version and readers only receive one LINGLITE issue a day. If your mail client is not set up, you can subscribe online, via web browser: link"},
+  "contentHelpLing" :{"message": "LINGUIST is a full-text version of the mailing list where readers receive each LINGUIST issue as it is posted. You may receive 10 or more issues a day. If your mail client is not set up, you can subscribe online, via web browser: link"}
+}
