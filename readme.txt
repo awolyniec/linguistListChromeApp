@@ -1,4 +1,5 @@
-Code documentation for the LINGUIST List Chrome app - version August 21st, 2015
+Code documentation for the LINGUIST List Chrome app
+Version: August 21st, 2015
 Developed by Alec Wolyniec and Petar Garzina
 
 ————————————————————————————————————————————————
@@ -26,23 +27,22 @@ Table of contents:
     3ai- jquery.jpanelmenu.js
     3aii- jQuery_dev.js
   3b- asyncManagement.js
-	-Function to trigger an event whenever a queue of asynchronous operations has been 	completed
+	-Function to trigger an event whenever a queue of asynchronous operations has been completed
   3c- defunctCode.js
   3d- geoLingMenuContainer.js
-	-Various used and unused functions to support the tab-based menu of the GeoLing 	map app
+	-Various used and unused functions to support the tab-based menu of the GeoLing map app
   3e- loadEvents.js
-	-Events to trigger upon loading, including click event handlers for buttons and a 	prompt to set geolocation preferences (on/off) if they have not been set before
+	-Events to trigger upon loading, including click event handlers for buttons and a prompt to set geolocation preferences (on/off) if they have not been set before
   3f- rss2.js
 	-Handles the content of the “read” panel - to read LINGUIST List postings
   3g- settingsHelpMenu.js
 	-Display settings for the settings and help menu
   3h- storage.js
-	-A Chrome local storage model, based on the model found in tutorials at 		developer.chrome.com
+	-A Chrome local storage model, based on the model found in tutorials at 	developer.chrome.com
   3i- storedSettings.js
 	-Handles the storage of geolocation and other settings in Chrome local storage
   3j- unitTests.js
-	-A few unit tests for app properties (i.e. ensuring that when the total width of 	menu tabs exceeds the width of the app window, all tabs decrease in size to fit
-	into the app window). Many of these are not relevant to the current version of the 	app.
+	-A few unit tests for app properties (i.e. ensuring that when the total width of menu tabs exceeds the width of the app window, all tabs decrease in size to fit into the app window). Many of these are not relevant to the current version of the app.
   3k- viewControl.js
 	-Controls which app view is shown at any given time
 4- pageViews
